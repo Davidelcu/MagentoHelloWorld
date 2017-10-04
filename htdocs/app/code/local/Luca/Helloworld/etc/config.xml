@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <modules>
+        <Luca_Helloworld>
+            <version>0.1.0</version>
+        </Luca_Helloworld>
+    </modules>
+    <global>
+        <blocks>
+            <luca_helloworld>
+                <class>Luca_Helloworld_Block</class>
+            </luca_helloworld>
+        </blocks>
+        <helpers>
+            <luca_helloworld>
+                <class>Luca_Helloworld_Helper</class>
+            </luca_helloworld>
+        </helpers>
+    </global>
+    <frontend>
+        <routers>
+            <luca_helloworld>
+                <use>standard</use>
+                <args>
+                    <module>Luca_Helloworld</module>
+                    <frontName>hello</frontName>
+                </args>
+            </luca_helloworld>
+        </routers>
+    </frontend>
+    <default>
+        <luca_helloworld>
+            <configuration>
+                <enabled>1</enabled>
+                <message>Test Messagge from config.xml</message>
+            </configuration>
+        </luca_helloworld>
+    </default>
+</config>
