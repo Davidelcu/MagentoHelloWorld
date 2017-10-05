@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<layout>
+    <default>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/2columns-right.phtml</template>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="luca_helloworld/helloworld" name="helloworld.content"
+                   template="helloworld/message.phtml" />
+        </reference>
+    </default>
+</layout>
